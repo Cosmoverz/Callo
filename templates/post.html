@@ -1,0 +1,77 @@
+{% include "header.html" %}
+
+<title>Cooli's Post</title>
+<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Vibur&display=swap" rel="stylesheet">
+	<style>
+		* {
+			user-select: none;
+		}
+
+		body {
+			background-color: #182538;
+		}
+
+		body,
+		html {
+			scroll-behavior: smooth;
+			scrollbar-width: none;
+		}
+
+		::-webkit-scrollbar {
+			width: none;
+		}
+	</style>
+	<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js">
+
+	</script>
+	<script>
+		var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-858444-Z3G6CIPJYV86N8CB/index.json',
+  });
+	</script>
+</head>
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{post.image_url}}')">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="post-heading">
+					<h1 class="post-title" style="font-family: 'Jua', sans-serif; user-select: none;">{{post.title}}</h1>
+					<h2 class="subheading post-subtitle" style="font-family: 'Comfortaa', cursive; user-select: none;">{{post.subtitle}}</h2>
+					<span class="meta post-meta" style="font-family: 'Quicksand', sans-serif; user-select: none;"><span class="colorful-text-4">Posted by</span>
+              <a href="/" style="color: #fecd1a; text-decoration: none; font-family: 'Vibur', cursive; font-size: 25px; user-select: none;">{{post.author}} </a>
+              <span class="colorful-text-4">on</span> <span style="font-family: 'Vibur', cursive; color: #FB9300; font-size: 20px; user-select: none;">{{post.date}}</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+		  <a href="/light/post/{{post.id}}" style="margin-bottom: 2.5%; font-size: 1.1rem; text-decoration: none; font-family: 'Indie Flower', cursive; color: #FD3A69; text-align: center; border-radius: 10px;" class="btn btn-outline-light">Switch to Light Mode</a>
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p style="font-family: 'Patrick Hand', cursive; user-select: none;">
+            <pre style="
+    color: #6B7A90;
+    background-color: #182538;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.5rem;
+">{{post.body}}</pre>
+          </p>
+          </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+{% include "footer.html" %}

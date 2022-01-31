@@ -1,0 +1,78 @@
+<style>
+	* {
+		user-select: none;
+	}
+
+	body,
+	html {
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+	}
+
+	::-webkit-scrollbar {
+		width: none;
+	}
+</style>
+
+<!-- Footer -->
+
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Kalam&family=Vibur&display=swap?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<footer style="background-color: #182538;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://github.com/Spacesters">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x" style="color:#185ADB;"></i>
+                  <i class="bi bi-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="mailto:hypestcooli@pm.me">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x" style="color:#185ADB;"></i>
+				  <i class="bi bi-envelope-fill fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://dribbble.com/Hypest">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x" style="color:#185ADB;"></i>
+				  <i class="bi bi-dribbble fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			<li class="list-inline-item">
+              <a href="https://stackoverflow.com/users/14726707/cooli">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x" style="color:#185ADB;"></i>
+				  <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+		  <br>
+          <p class="copyright" style="font-family: 'Vibur', cursive; font-size: 1.5rem; color: #7952B3; user-select: none;">Copyright <i class="fi fi-rr-copyright" style="font-size: 1.25rem;"></i>
+          <script>
+            var CurrentYear = new Date().getFullYear()
+            document.write(CurrentYear)
+        </script>
+        <span class="cooli" style="font-size: 1.8rem;"> Cooli</span>
+        </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>

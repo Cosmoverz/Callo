@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cooli's Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Vibur&family=Comfortaa:wght@600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/Favicon.png') }}">
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js">
+
+    </script>
+    <script>
+		var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-858444-Z3G6CIPJYV86N8CB/index.json',
+  });
+
+    </script>
+    <style>
+		body,
+		html {
+			scroll-behavior: smooth;
+			scrollbar-width: none;
+		}
+
+		::-webkit-scrollbar {
+			width: none;
+		}
+
+		h2 {
+		    font-family: "Jua", "Quicksand", "Helvetica Neue", "Arial", sans-serif;
+		}
+
+		p,
+		label {
+		    font-family: "Quicksand", "Comfortaa", "Jua", "Helvetica Neue", "Arial", sans-serif;
+		}
+
+		a {
+		    font-family: "Varela Round", "Comfortaa", "Quicksand", "Jua", "Helvetica Neue", "Arial", sans-serif;
+		}
+
+		.footer-copyright {
+		    font-family: "Vibur", "Jua", "Quicksand", "Comfortaa", "Helvetica Neue", "Arial", sans-serif;
+		    font-size: 1rem;
+		}
+
+    </style>
+</head>
+
+<body class="is-boxed has-animations">
+<div class="body-wrap boxed-container">
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand header-brand">
+                    <h1 class="m-0">
+                        <a href="#">
+                            <img class="header-logo-image asset-light" src="static/img/logo-light.svg" alt="Logo">
+                            <img class="header-logo-image asset-dark" src="static/img/logo-dark.svg" alt="Logo">
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <h1 class="hero-title mt-0 cooli" style="color: #404B69;">Cooli</h1>
+                        <p class="hero-paragraph">I am an intermediate Python, HTML, CSS programmer! I love making new projects, and 3D designs!</p>
+                        <div class="hero-cta">
+                            <a class="button button-primary" href="/blog">Blog</a>
+                            <div class="lights-toggle">
+                                <input id="lights-toggle" type="checkbox" name="lights-toggle" class="switch"
+                                       checked="checked">
+                                <label for="lights-toggle" class="text-xs"><strong><span>Turn me <span
+                                        class="label-text">dark</span>!</span></strong></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-media">
+                        <div class="header-illustration">
+                            <img class="header-illustration-image asset-light"
+                                 src="static/img/header-illustration-light.svg" alt="Header illustration">
+                            <img class="header-illustration-image asset-dark"
+                                 src="static/img/header-illustration-dark.svg" alt="Header illustration">
+                        </div>
+                        <div class="hero-media-illustration">
+                            <img class="hero-media-illustration-image asset-light"
+                                 src="static/img/hero-media-illustration-light.svg" alt="Hero media illustration">
+                            <img class="hero-media-illustration-image asset-dark"
+                                 src="static/img/hero-media-illustration-dark.svg" alt="Hero media illustration">
+                        </div>
+                        <div class="hero-media-container">
+                            <img class="hero-media-image asset-light" src="static/img/hero-media-light.svg"
+                                 alt="Hero media">
+                            <img class="hero-media-image asset-dark" src="static/img/hero-media-dark.svg"
+                                 alt="Hero media">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section">
+            <div class="container">
+                <div class="features-inner section-inner has-bottom-divider">
+                    <div class="features-header text-center">
+                        <div class="container-sm">
+                            <h2 class="section-title mt-0" style="color: #404B69;">My Work!</h2>
+                            <p class="section-paragraph">I have created lots of projects all around the internet, mostly
+                                I use <strong><a href="https://code.visualstudio.com/" target="_blank">VSCode</a></strong>! Why <strong><a
+                                        href="https://code.visualstudio.com/" target="_blank">VSCode</a></strong>? <strong><a
+                                        href="https://code.visualstudio.com/" target="_blank">VSCode</a></strong> is <strong><u>easy</u></strong> and <strong><u>visual</u></strong> to use!</p>
+                            <div class="features-image">
+                                <img class="features-illustration asset-dark"
+                                     src="static/img/features-illustration-dark.svg" alt="Feature illustration">
+                                <img class="features-box asset-dark" src="static/img/features-box-dark.svg"
+                                     alt="Feature box">
+                                <img class="features-illustration asset-dark"
+                                     src="static/img/features-illustration-top-dark.svg" alt="Feature illustration top">
+                                <img class="features-illustration asset-light"
+                                     src="static/img/features-illustration-light.svg" alt="Feature illustration">
+                                <img class="features-box asset-light" src="static/img/features-box-light.svg"
+                                     alt="Feature box">
+                                <img class="features-illustration asset-light"
+                                     src="static/img/features-illustration-top-light.svg"
+                                     alt="Feature illustration top">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-wrap">
+                        <div class="feature is-revealing">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <img class="asset-light" src="static/img/feature-01-light.svg" alt="Feature 01">
+                                    <img class="asset-dark" src="static/img/feature-01-dark.svg" alt="Feature 01">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title mt-0"><a
+                                            href="https://replit.com/@Cooli/Trivia?embed=1&output=1#main.py">Trivia</a>
+                                    </h3>
+                                    <p class="text-sm mb-0">Answer questions not hard, not easy but they are true/false
+                                        questions and they have different difficulties!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature is-revealing">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <img class="asset-light" src="static/img/feature-02-light.svg" alt="Feature 02">
+                                    <img class="asset-dark" src="static/img/feature-02-dark.svg" alt="Feature 02">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title mt-0"><a href="https://shellshock.cooli.repl.co/">Shell
+                                        Shockers</a></h3>
+                                    <p class="text-sm mb-0">Play the game, Shell Shockers which is a copy built by me
+                                        for you to play an amazing game from the browser!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature is-revealing">
+                            <div class="feature-inner">
+                                <div class="feature-icon">
+                                    <img class="asset-light" src="static/img/feature-03-light.svg" alt="Feature 03">
+                                    <img class="asset-dark" src="static/img/feature-03-dark.svg" alt="Feature 03">
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title mt-0"><a href="https://volcano-mapper.cooli.repl.co/">Volcano
+                                        Mapper</a></h3>
+                                    <p class="text-sm mb-0">Look at the map and see lot's of volcanoes from big to
+                                        small, and they are color coded so you can identify them better!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta section">
+            <div class="container-sm">
+                <div class="cta-inner section-inner">
+                    <div class="cta-header text-center">
+                        <h2 class="section-title mt-0" style="color: #404B69;">About Me</h2>
+                        <p class="section-paragraph">Want to know more about me? Like want I do, what I know, who am I,
+                            when I have started coding!</p>
+                        <div class="cta-cta">
+                            <a class="button button-primary" href="/about">About Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer has-top-divider">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="brand footer-brand">
+                    <a href="#">
+                        <img class="asset-light" src="static/img/logo-light.svg" alt="Logo">
+                        <img class="asset-dark" src="static/img/logo-dark.svg" alt="Logo">
+                    </a>
+                </div>
+                <ul class="footer-links list-reset">
+                    <li>
+                        <a style="text-decoration: none; color: #fecd1a;" href="/"><strong>Home</strong></a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: #fecd1a;" href="/blog"><strong>Blog</strong></a>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none; color: #fecd1a;" href="/about"><strong>About Me</strong></a>
+                    </li>
+                </ul>
+                <ul class="footer-social-links list-reset">
+                    <li>
+                        <a href="https://github.com/Spacesters">
+                            <span class="screen-reader-text">GitHub</span>
+                            <svg width="20" height="20" fill="#000" class="icon icon-github">
+                                <use xlink:href="#icon-github">
+                                    <symbol id="icon-github" viewBox="0 0 32 32">
+                                        <path
+                                                d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z">
+                                        </path>
+                                    </symbol>
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                      <a href="https://dribbble.com/Hypest">
+                        <span class="screen-reader-text">Dribble</span>
+                        <svg width="20" height="20" fill="#ea4c89" class="icon icon-dribbble">
+                          <use xlink:href="#icon-dribbble">
+                            <symbol id="icon-dribbble" viewBox="0 0 32 32">
+                              <path
+                                d="M16 32c-8.825 0-16-7.175-16-16s7.175-16 16-16c8.825 0 16 7.175 16 16s-7.175 16-16 16v0zM29.494 18.188c-0.469-0.15-4.231-1.269-8.512-0.581 1.788 4.912 2.512 8.912 2.656 9.744 3.063-2.075 5.25-5.356 5.856-9.163v0zM21.337 28.6c-0.206-1.2-0.994-5.375-2.913-10.363-0.031 0.012-0.063 0.019-0.087 0.031-7.713 2.688-10.481 8.031-10.725 8.531 2.319 1.806 5.231 2.887 8.387 2.887 1.894 0 3.7-0.387 5.338-1.087v0zM5.844 25.156c0.313-0.531 4.063-6.738 11.106-9.019 0.175-0.056 0.356-0.113 0.538-0.162-0.344-0.775-0.719-1.556-1.106-2.319-6.819 2.044-13.444 1.956-14.044 1.95-0.006 0.137-0.006 0.275-0.006 0.419 0 3.506 1.331 6.712 3.512 9.131v0zM2.625 13.219c0.612 0.006 6.244 0.031 12.637-1.662-2.262-4.025-4.706-7.412-5.069-7.906-3.825 1.806-6.688 5.331-7.569 9.569v0zM12.8 2.731c0.375 0.506 2.863 3.888 5.1 8 4.863-1.819 6.919-4.588 7.163-4.938-2.413-2.144-5.587-3.444-9.063-3.444-1.1 0.006-2.175 0.138-3.2 0.381v0zM26.581 7.381c-0.288 0.388-2.581 3.325-7.631 5.388 0.319 0.65 0.625 1.313 0.906 1.981 0.1 0.238 0.2 0.469 0.294 0.706 4.55-0.569 9.069 0.344 9.519 0.438-0.031-3.225-1.188-6.188-3.087-8.512v0z">
+                              </path>
+                            </symbol>
+                          </use>
+                        </svg>
+                      </a>
+                    </li>
+                </ul>
+                <p class="copyright" style="font-family: 'Vibur', cursive; font-size: 1rem; color: #6B7A90; user-select: none;">Copyright <i class="fi fi-rr-copyright" style="font-size: 0.8rem;"></i>
+                    <script>
+                        var CurrentYear = new Date().getFullYear()
+                        document.write(CurrentYear)
+                    </script>
+                    <span class="cooli" style="font-size: 1.2rem;"> Cooli</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="static/js/main.min.js"></script>
+</body>
+</html>

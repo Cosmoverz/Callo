@@ -1,0 +1,118 @@
+{% include "header.html" %}
+
+
+<title>Cooli's Blog</title>
+<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+<style>
+	* {
+		user-select: none;
+	}
+
+	body {
+		background-color: #182538;
+	}
+
+	body,
+	html {
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+	}
+
+	::-webkit-scrollbar {
+		width: none;
+	}
+
+</style>
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js">
+
+</script>
+<script>
+	var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://chats.landbot.io/v3/H-858444-Z3G6CIPJYV86N8CB/index.json',
+  });
+
+
+</script>
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('static/img/blog-dark.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <h1 style="color: #FD3A69; font-family: 'Balsamiq Sans', cursive; user-select: none;"><span
+                            class="cooli">Cooli</span>'s Blog</h1>
+                    <span class="subheading"
+                          style="color: #36d8b7; font-family: 'Just Another Hand', sans-serif; font-size: 2.5rem; user-select: none;">A fine sparkling collection of <span
+                            class="cooli">Cooli</span>'s posts</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+.post-link {
+    color: #fecd1a;
+    text-decoration: none;
+}
+
+</style>
+
+<!-- Main Content -->
+<div class="container">
+
+
+    <div class="row">
+        <a href="/light/blog"
+           style="margin-bottom: 2.5%; font-size: 1.1rem; text-decoration: none; font-family: 'Indie Flower', cursive; color: #FD3A69; text-align: center; border-radius: 10px;"
+           class="btn btn-outline-light">Switch to Light Mode</a>
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {% for post in all_posts %}
+            <div class="post-preview">
+                <a class="text-link" href="{{ url_for('show_post', index=post.id) }}">
+                    <h2 class="post-title" style="font-family: 'Jua', sans-serif; user-select: none;">
+                        {{post.title}}
+                    </h2>
+                    <h3 class="post-subtitle" style="font-family: 'Quicksand', sans-serif; user-select: none;">
+                        {{post.subtitle}}
+                    </h3>
+                </a>
+                <p class="post-meta" style="font-family: 'Comfortaa', sans-serif; user-select: none;"><span
+                        class="colorful-text-4">Posted by</span>
+                    <a class="post-link cooli" href="/"
+                       style="color: #fecd1a; text-decoration: none; font-size: 25px; user-select: none;">{{post.author}} </a>
+                    <span class="colorful-text-4">on</span> <span
+                            style="font-family: 'Vibur', cursive; color: #FB9300; font-size: 20px; user-select: none;">{{post.date}}</span>
+                </p>
+            </div>
+            <hr>
+            {% endfor %}
+
+
+            <!-- Pager -->
+            <div class="clearfix">
+                <a class="btn btn-info btn-lg float-left" href="#"
+                   style="font-family: 'Indie Flower', cursive; border-radius: 20px; user-select: none;"><i
+                        class="fi fi-rr-angle-up"></i><br>Older Posts<br></a>
+                <a class="btn btn-info btn-lg float-right" href="javascript:void(0);"
+                   style="font-family: 'Indie Flower', cursive; border-radius: 20px; user-select: none;">Newer Posts<br><i
+                        class="fi fi-rr-angle-down"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+{% include "footer.html" %}

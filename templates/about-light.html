@@ -1,0 +1,63 @@
+{% include "header.html" %}
+
+
+<title>About Cooli</title>
+<link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+<style>
+	* {
+		user-select: none;
+	}
+
+	body,
+	html {
+		scroll-behavior: smooth;
+		scrollbar-width: none;
+		background: #f1f3f8;
+	}
+
+	::-webkit-scrollbar {
+		width: none;
+	}
+</style>
+<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js">
+
+</script>
+<script>
+	var myLandbot = new Landbot.Livechat({
+			 configUrl: 'https://chats.landbot.io/v3/H-858444-Z3G6CIPJYV86N8CB/index.json',
+		 });
+
+</script>
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('/static/img/about-light.jpg');">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-10 mx-auto">
+				<div class="page-heading">
+					<h1 style="color: #FD3A69; font-family: 'Balsamiq Sans', cursive; user-select: none;">About Me</h1>
+					<span class="subheading" style="color: #ff7567; font-family: 'Just Another Hand', sans-serif; font-size: 2.5rem; user-select: none;">This is what a typical programmer does</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+		<a href="/about" style="margin-bottom: 2.5%; font-size: 1.1rem; text-decoration: none; font-family: 'Indie Flower', cursive; color: #fecd1a; text-align: center; border-radius: 10px;" class="btn btn-outline-dark">Switch to Dark Mode</a>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p style="font-family: 'Patrick Hand', cursive; user-select: none;">I am a programmer who knows <i style="color: #334257;" class="fab fa-python"></i>, <i style="color: #334257;" class="fab fa-html5"></i>, <i style="color: #334257;" class="fab fa-css3-alt"></i> and Scratch <i style="color: #334257;" class="fas fa-cat"></i>!</p>
+        <p style="font-family: 'Patrick Hand', cursive; user-select: none;">I did Scratch from 2018 to 2020, and I made a lot of projects literally. So then I wanted to move to a typing base programming not code blocks so I chose Python! I started Python on June 6th, and I still to Python today. Then on Decemeber 18th, 2020 I started to learn HTML, CSS part of my course. Today I still do Python, HTML, and CSS!</p>
+        <p style="font-family: 'Patrick Hand', cursive; user-select: none;">I take my courses from Udemy, I have taken <i style="color: #334257;" class="fab fa-css3"></i> python courses in which they have taught me HTML and CSS with other css frameworks like <i style="color: #334257;" class="fab fa-bootstrap"></i>!</p>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+	<h1 id="feedback" style="font-family: 'Indie Flower', 'Patrick Hand', 'Quicksand', 'Comfortaa', sans-serif; font-size: 2rem; color: #082032; text-align: center;">Feedback is only for Dark Mode, switch to dark mode and see it there!</h1>
+
+  {% include "footer.html" %}
